@@ -29,7 +29,7 @@
             <img class="h-[50px]" src="./assets/Group.png" alt="">
 
             <div class="ml-3">
-                <h2 class="font-bold" >$ <span id="Available_balance">45000</span></h2>
+                <h2 class="font-bold" >$ <span id="available_balance">45000</span></h2>
                 <p class="text-[#08080880]">Available Balance</p>
             </div>
 
@@ -55,37 +55,37 @@
 
     <div class=" min-h-[200px] grid grid-cols-3 gap-4 p-3">
 
-        <div id="add_button" class="border-2 border-gray-300 text-center p-3 rounded-lg">
+        <div id="add_button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-lg">
             <img class="mx-auto" src="./assets/wallet1.png" alt="">
             <h2>Add Money</h2>
         </div>
 
 
-        <div id="cash_out_button" class="border-2 border-gray-300 text-center p-3 rounded-lg">
+        <div id="cash_out_button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-lg">
             <img class="mx-auto" src="./assets/send1.png" alt="">
             <h2>Cashout</h2>
         </div>
 
 
-        <div class="border-2 border-gray-300 text-center p-3 rounded-lg">
+        <div id="transfer_button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-lg">
             <img class="mx-auto" src="./assets/money1.png" alt="">
             <h2>Transfer Money</h2>
         </div>
 
 
-        <div class="border-2 border-gray-300 text-center p-3 rounded-lg">
+        <div id="bonus_button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-lg">
             <img class="mx-auto" src="./assets/bonus1.png" alt="">
             <h2>Get Bonues</h2>
         </div>
 
 
-        <div class="border-2 border-gray-300 text-center p-3 rounded-lg">
+        <div id="bill_button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-lg">
             <img class="mx-auto" src="./assets/purse1.png" alt="">
             <h2>Pay Bill</h2>
         </div>
 
 
-        <div class="border-2 border-gray-300 text-center p-3 rounded-lg">
+        <div id="transaction_button" class="form-btn border-2 border-gray-300 text-center p-3 rounded-lg">
             <img class="mx-auto" src="./assets/transaction1.png" alt="">
             <h2>Transaction</h2>
         </div>
@@ -98,7 +98,7 @@
 
 <div class="all-form-section max-w-lg mx-auto">
     <!-- add money -->
-     <div id="add_money_parent">
+     <div id="add_money_parent" class="form" >
         <h1 class="my-5 font-bold ml-3">Add Money</h1>
         <form action="" class="bg-white rounded-2xl p-8">
             <div class="mb-3">
@@ -145,18 +145,15 @@
 
 
         </form>
-
      </div>
 
 
      <!-- Cashout form -->
-      <div id="cash_out_parent" style="display: none;">
+      <div id="cash_out_parent" class="form"  style="display: none;">
         <h1 class="my-5 font-bold ml-3">Cash Out</h1>
 
 
         <form action="" class="bg-white rounded-2xl p-8">
-            <!-- <div class="mb-3">                
-            </div> -->
 
             
         <div>
@@ -193,6 +190,36 @@
         </form>
 
       </div>
+
+      <!-- transfer money -->
+       <div id="transfer_money_parent" class="form" style="display:none;">
+            <h1 class="my-5 font-bold ml-3">Transfer Money</h1>
+       </div>
+
+      <!-- Get Bonus -->
+       <div id="get_bonus_parent" class="form" style="display:none;">
+            <h1 class="my-5 font-bold ml-3">Get Bonus</h1>
+       </div>
+
+      <!-- Pay bill -->
+       <div id="Pay_bill_parent" class="form" style="display:none;">
+            <h1 class="my-5 font-bold ml-3">Pay Bill</h1>
+       </div>
+
+      <!-- Transaction -->
+       <div id="transentions_parent" class="form" style="display:none;">
+            <div class="flex justify-between items-center">
+                <h1 class="my-5 font-bold ml-3">Transaction History</h1>
+                <p class="text-[#08080880]">View All</p>
+            </div>
+
+            <div id="transaction_container">
+                
+                
+
+            </div>    
+       </div>
+
 
 </div>
 
